@@ -714,8 +714,8 @@ namespace revolve
       return RafCpgNetwork;
     }
 
-    CPPNEAT::GeneticEncodingPtr
-    convertNNtoGE(boost::shared_ptr< CPPNConfig > config)
+    CPPNEAT::GeneticEncodingPtr convertNNtoGE(boost::shared_ptr< CPPNConfig >
+                                              /*config*/)
     {
       return last_genotype_;
     }

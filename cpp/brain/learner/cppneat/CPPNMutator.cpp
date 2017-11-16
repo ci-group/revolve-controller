@@ -210,7 +210,15 @@ namespace CPPNEAT
                inNums});
     }
 
+//    for (const auto &value : this->secondToFirst_)
+//    {
+//      std::cout << value.first << " <- " << value.second << std::endl;
+//    }
+//    std::cout << "innovationNumber_: " << innovationNumber_ << std::endl;
+
     this->innovationNumber_ += secondInnovationNumber_;
+//    std::cout << "innovationNumber_: " << innovationNumber_ << std::endl;
+//    std::exit(0);
   }
 
   void Mutator::MutateNeuronParams(

@@ -372,8 +372,7 @@ namespace CPPNEAT
                 innovationNumber,
                 true,
                 _path,
-                first,
-                ""));
+                first));
         newGenome->AddConnection(newConnection);
       }
       genotypes.push_back(newGenome);
@@ -576,7 +575,7 @@ namespace CPPNEAT
     //only keep species which are not empty
     for (const auto &sppair : old_species)
     {
-      if (sppair.second.empty())
+      if (not sppair.second.empty())
       {
         species.insert(sppair);
       }
@@ -933,11 +932,11 @@ namespace CPPNEAT
 
   const bool NEATLearner::ASEXUAL = false;
 
-  const int NEATLearner::POP_SIZE = 50;
+  const int NEATLearner::POP_SIZE = 10;
 
-  const int NEATLearner::TOURNAMENT_SIZE = 40;
+  const int NEATLearner::TOURNAMENT_SIZE = 5;
 
-  const int NEATLearner::NUM_CHILDREN = 45;
+  const int NEATLearner::NUM_CHILDREN = 9;
 
   const double NEATLearner::WEIGHT_MUTATION_PROBABILITY = 0.8;
 
